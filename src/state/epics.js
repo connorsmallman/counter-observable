@@ -1,4 +1,4 @@
 import { combineEpics } from 'redux-observable';
-import counterEpic from './epics/counter';
+import { incrementEpic, decrementEpic } from './epics/counter';
 
-export default combineEpics(counterEpic);
+export default combineEpics(incrementEpic, decrementEpic);
