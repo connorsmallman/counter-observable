@@ -1,4 +1,4 @@
 import { combineEpics } from 'redux-observable';
-import pingEpic from './epics/ping';
+import counterEpic from './epics/counter';
 
-export default combineEpics(pingEpic);
+export default combineEpics(counterEpic);

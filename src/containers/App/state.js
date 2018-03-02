@@ -1,13 +1,14 @@
-import { ping } from '../../state/modules/ping';
+import { increment, decrement } from '../../state/modules/counter';
 
 export function mapStateToProps(state) {
   return {
-    isPinging: state.ping.isPinging
+    count: state.counter
   };
 }
 
 export function mapDispatchToProps(dispatch) {
   return {
-    ping: () => dispatch(ping())
+    increment: () => dispatch(increment()),
+    decrement: () => dispatch(decrement())
   }
 }

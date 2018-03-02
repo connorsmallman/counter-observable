@@ -6,8 +6,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>is pinging: {this.props.isPinging.toString()}</h1>
-        <button onClick={this.props.ping}>Start PING</button>
+        <button onClick={this.props.decrement}>-</button>
+        <h1>{this.props.count}</h1>
+        <button onClick={this.props.increment}>+</button>
       </div>
     );
   }
